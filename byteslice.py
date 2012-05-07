@@ -12,7 +12,7 @@ def byteslice(filename):
     excess_size = filesize - (rough_slice_number * MB)
 
     if excess_size > 0:
-        if excess_size > (MB * 0.75):
+        if excess_size > (MB * 0.85):
             print 'Slice count is {0}, most slices are {1} BYTES, final slice is {2} BYTES'.format(
                 (rough_slice_number + 1),
                 (MB),
