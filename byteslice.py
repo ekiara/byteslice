@@ -4,7 +4,6 @@ import os.path
 import sys
 
 MB = 1024*1024
-filename = sys.argv[1]
 
 
 def byteslice(filename):
@@ -29,3 +28,9 @@ def byteslice(filename):
     else:
         print 'Perfect Fit?'
 
+
+def main():
+    byteslice(sys.argv[1])
+
+if __name__ == '__main__':
+    main()
